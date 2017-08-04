@@ -167,7 +167,7 @@ header.landing {
 		-moz-transform: rotate(-4deg);
 		-webkit-transform: rotate(-4deg);
 	width: 100%;
-	z-index: 2;
+	z-index: 256;
 }
 
 	#rotated_box .content {
