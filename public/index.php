@@ -95,7 +95,7 @@ $app->get(
     function () use ($app) {
         $params   = $app->getRouter()->getParams();
         $language = $params['lang'] ?? 'en';
-        $language = (true !== empty($language)) ?: 'en';
+        $language = (true !== empty($language)) ? $language : 'en';
         $data     = file_get_contents(appPath("storage/languages/{$language}.json"));
         $data     = json_decode($data, true);
         $output   = $app->viewSimple->render(
