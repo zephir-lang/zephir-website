@@ -1,26 +1,20 @@
-<!doctype html>
-<!--[if IE 8]> <html lang="en-US" class="ie8 no-js"> <![endif]-->
-<!--[if IE 9]> <html lang="en-US" class="ie9 no-js"> <![endif]-->
-<!--[if !IE]><!-->
-<html lang="en-US" class="no-js">
-<!--<![endif]-->
+<!DOCTYPE HTML>
+<html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Zephir Programming Language</title>
-
+    <title>{{ langData['title'] }}</title>
     <meta name="author" content="Zephir Language Team">
     <meta name="application-name" content="Zephir Programming Language">
-    <meta name="description" content="Zephir is an open source, high-level/domain specific language designed to ease the creation and maintainability of extensions for PHP with a focus on type and memory safety.">
+    <meta name="description" content="{{ langData['description'] }}">
 
     <link href='//fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/headline_animation.css">
-
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://zephir-lang.com/images/icons/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://zephir-lang.com/images/icons/apple-touch-icon-114x114.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://zephir-lang.com/images/icons/apple-touch-icon-72x72.png">
@@ -49,15 +43,21 @@
             <div class="responsive_nav"><i class="fa fa-bars"></i></div>
             <nav>
                 <ul>
-                    <li class="current"><a href="/">Home</a></li>
+                    <li class="current"><a href="/">{{ langData['home'] }}</a></li>
                     <li>
-                        <a href="https://github.com/phalcon/zephir">Github</a>
+                        <a href="https://github.com/phalcon/zephir">{{ langData['github'] }}</a>
                     </li>
                     <li>
-                        <a href="https://docs.zephir-lang.com/">Documentation</a>
+                        <a href="https://docs.zephir-lang.com/">{{ langData['documentation'] }}</a>
                     </li>
                     <li>
-                        <a href="https://forum.zephir-lang.com/">Support</a>
+                        <a href="https://forum.zephir-lang.com/">{{ langData['support'] }}</a>
+                    </li>
+                    <li>
+                        <select class="languageSelector">
+                            <option value="en">{{ langData['languageEnglish'] }}</option>
+                            <option value="cn">{{ langData['languageChinese'] }}</option>
+                        </select>
                     </li>
                 </ul>
             </nav>
@@ -68,24 +68,24 @@
             <!-- HEADLINE ANIMATION -->
             <div class="cd-intro">
                 <h1 class="cd-headline slide">
-                    <span>Enhance your PHP frameworks/libraries by making them </span>
+                    <span>{{ langData['encancePhp'] }} </span>
                     <span class="cd-words-wrapper">
-                            <b class="is-visible">Faster</b>
-                            <b>Better</b>
-                            <b>More Reliable</b>
+                            <b class="is-visible">{{ langData['encancePhpFaster'] }}</b>
+                            <b>{{ langData['encancePhpBetter'] }}</b>
+                            <b>{{ langData['encancePhpReliable'] }}</b>
                         </span><br/>
                     <!--<span>While Improving The User Experience</span>-->
                 </h1>
             </div><!-- END HEADLINE ANIMATION -->
 
             <div class="try-btn">
-                <a href="https://github.com/phalcon/zephir" target="_blank" class="btn btn-pink">
-                    <i class="fa fa-download"></i> Download
-                    <span class="description">Latest stable</span>
+                <a href="https://github.com/phalcon/zephir" class="btn btn-pink">
+                    <i class="fa fa-download"></i> {{ langData['download'] }}
+                    <span class="description">{{ langData['version'] }}</span>
                 </a>
-                <a href="https://docs.zephir-lang.com" target="_blank" class="btn btn-blue">
-                    <i class="fa fa-play-circle-o"></i> A small taste
-                    <span class="description">See what zephir can do!</span>
+                <a href="#" class="btn btn-blue">
+                    <i class="fa fa-play-circle-o"></i> {{ langData['aSmallTaste'] }}
+                    <span class="description">{{ langData['seeWhatZCanDo'] }}</span>
                 </a>
             </div>
         </div>
@@ -95,31 +95,19 @@
             <div class="content">
                 <div class="column">
                     <div class="feacture_image"><img src="images/system.png"></div>
-                    <h3>Type system</h3>
-                    <p>
-                        Zephir combines static and dynamic typing in a friendly
-                        language that is compiled down to machine code using
-                        the industry standard compilers.
-                    </p>
+                    <h3>{{ langData['typeSystem'] }}</h3>
+                    <p>{{ langData['typeSystemDescription'] }}</p>
                 </div>
                 <div class="column">
                     <div class="feacture_image"><img src="images/memory.png"></div>
-                    <h3>Memory safety</h3>
-                    <p>
-                        Despite being a compiled language, it does not allow you to
-                        use pointers, it provides a garbage collector to avoid
-                        memory leaks and more.
-                    </p>
+                    <h3>{{ langData['memorySafety'] }}</h3>
+                    <p>{{ langData['memorySafetyDescription'] }}</p>
                 </div>
                 <div class="column">
                     <div class="feacture_image"><img src="images/compilation.png">
                     </div>
-                    <h3>Compilation model</h3>
-                    <p>
-                        Zephir takes advantage of the extension ecosystem available
-                        in PHP to allow you create your own extensions as shared
-                        libraries in Linux/OSX and DLLs on Windows.
-                    </p>
+                    <h3>{{ langData['compilationModel'] }}</h3>
+                    <p>{{ langData['compilationModelDescription'] }}</p>
                 </div>
 
                 <div class="clear"></div>
@@ -129,28 +117,19 @@
     <section id="about_project">
         <div class="content">
             <div class="col col-x5">
-                <h2>Everything you need</h2>
-                <p>
-                    Zephir, an open source, high-level language designed to
-                    ease the creation and maintainability of extensions for
-                    PHP with a focus on type and memory safety.
-                </p>
-                <p>
-                    Zephir is a language that addresses the major needs of a
-                    PHP developer trying to write and compile code that can be
-                    executed by PHP. It is a dynamically/statically typed, some
-                    of its features can be familiar to PHP developers.
-                </p>
+                <h2>{{ langData['everythingYouNeed'] }}</h2>
+                <p>{{ langData['everythingYouNeedDescription1'] }}</p>
+                <p>{{ langData['everythingYouNeedDescription2'] }}</p>
             </div>
             <div class="col col-x5">
-                <h2>Do you need a hand?</h2>
+                <h2>{{ langData['needAHand'] }}</h2>
                 <a href="https://docs.zephir-lang.com/en/latest/install.html"
                    class="bubbletext text-violet">
-                    Learn how to install the compiler
+                    {{ langData['howToInstall'] }}
                 </a>
                 <a href="https://docs.zephir-lang.com/en/latest/intro.html"
                    class="bubbletext text-violet">
-                    Read some of our tutorials
+                    {{ langData['readTutorials'] }}
                 </a>
             </div>
             <div class="clear"></div>
@@ -163,42 +142,42 @@
         <div class="content">
             <div class="left-content">
                 <div class="col">
-                    <strong>Main</strong>
-                    <a href="https://github.com/phalcon/zephir" class="download">
-                        Download
+                    <strong>{{ langData['main'] }}</strong>
+                    <a href="http://github.com/phalcon/zephir" class="download">
+                        {{ langData['download'] }}
                     </a>
-                    <a href="https://docs.zephir-lang.com/">
-                        Documentation
+                    <a href="http://docs.zephir-lang.com/">
+                        {{ langData['documentation'] }}
                     </a>
-                    <a href="https://docs.zephir-lang.com/en/latest/install.html">
-                        Installation
-                    </a>
-                </div>
-                <div class="col">
-                    <strong>Others</strong>
-                    <a href="https://docs.zephir-lang.com/en/latest/language.html">
-                        Basic Syntax
-                    </a>
-                    <a href="https://docs.zephir-lang.com/en/latest/operators.html">
-                        Operators
-                    </a>
-                    <a href="https://docs.zephir-lang.com/en/latest/arrays.html">
-                        Arrays
+                    <a href="http://docs.zephir-lang.com/en/latest/install.html">
+                        {{ langData['installation'] }}
                     </a>
                 </div>
                 <div class="col">
-                    <strong>Zephir</strong>
-                    <a href="#">What is it?</a>
-                    <a href="#">Team</a>
-                    <a href="#">Contact Us</a>
+                    <strong>{{ langData['others'] }}</strong>
+                    <a href="http://docs.zephir-lang.com/en/latest/language.html">
+                        {{ langData['basicSyntax'] }}
+                    </a>
+                    <a href="http://docs.zephir-lang.com/en/latest/operators.html">
+                        {{ langData['operators'] }}
+                    </a>
+                    <a href="http://docs.zephir-lang.com/en/latest/arrays.html">
+                        {{ langData['arrays'] }}
+                    </a>
+                </div>
+                <div class="col">
+                    <strong>{{ langData['zephir'] }}</strong>
+                    <a href="#">{{ langData['whatIsIt'] }}</a>
+                    <a href="#">{{ langData['team'] }}</a>
+                    <a href="#">{{ langData['contactUs'] }}</a>
                 </div>
             </div>
             <div class="right-content">
-                <strong>Get in touch with us!</strong>
-                <span>Follow us on the different social networks</span>
+                <strong>{{ langData['getInTouch'] }}</strong>
+                <span>{{ langData['followUsOnSocialMedia'] }}</span>
 
                 <div class="social-links">
-                    <a href="https://twitter.com/zephirlang" class="tt-icon"></a>
+                    <a href="http://twitter.com/zephirlang" class="tt-icon"></a>
                     <!--<a href="#" class="fb-icon"></a>
                     <a href="#" class="gg-icon"></a>-->
                 </div>
@@ -208,16 +187,16 @@
 
         <div class="developed">
             <div class="content">
-                Website designed by:
-                <a href="https://www.mctekk.com/" class="logo">
+                {{ langData['websiteDesignedBy'] }}Website designed by:
+                <a href="http://www.mctekk.com/" class="logo">
                     <img src="images/mctekk-logo.png" alt=""/>
                 </a>
             </div>
         </div>
     </footer>
 
-    <script src="js/jquery-2.1.1.js"></script>
-    <script src="js/main.js"></script>
+    <script src="../js/jquery-2.1.1.js"></script>
+    <script src="../js/main.js"></script>
     <script type="text/javascript">
         $(document).ready(
             function () {
@@ -236,6 +215,19 @@
                             nav_element.addClass('slide');
                             body_element.addClass('overflow');
                         }
+                    }
+                );
+
+                $('.languageSelector').on(
+                    'change',
+                    function () {
+                        var url = $(this).val();
+                        if (!url) {
+                            url = 'en';
+                        }
+
+                        window.location = '{{ config.path('siteUrl') }}/' + url;
+                        return false;
                     }
                 );
             }
