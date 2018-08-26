@@ -204,7 +204,7 @@
                             url = 'en';
                         }
 
-                        window.location = 'http://website.zephir.ld/' + url;
+                        window.location = '{{ config.path('siteUrl') }}/' + url;
                         return false;
                     }
                 );
