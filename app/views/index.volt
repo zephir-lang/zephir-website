@@ -56,6 +56,8 @@
                     <li>
                         <select class="languageSelector">
                             <option value="en">{{ langData['languageEnglish'] }}</option>
+                            <option value="zh">{{ langData['languageChineseSimplified'] }}</option>
+                            <option value="el">{{ langData['languageGreek'] }}</option>
                         </select>
                     </li>
                 </ul>
