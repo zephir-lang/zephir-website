@@ -2,6 +2,7 @@
   "aSmallTaste": "A small taste",
   "about": "About",
   "arrays": "Arrays",
+  "author": "Zephir Language Team",
   "basicSyntax": "Basic Syntax",
   "compilationModel": "Compilation model",
   "compilationModelDescription": "Zephir takes advantage of the extension ecosystem available in PHP to allow you create your own extensions as shared libraries in Linux\/OSX and DLLs on Windows.",

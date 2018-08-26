@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>{{ langData['title'] }}</title>
-    <meta name="author" content="Zephir Language Team">
-    <meta name="application-name" content="Zephir Programming Language">
+    <meta name="author" content="{{ langData['author'] }}">
+    <meta name="application-name" content="{{ langData['title'] }}">
     <meta name="description" content="{{ langData['description'] }}">
 
     <link href='//fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
