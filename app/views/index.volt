@@ -58,6 +58,7 @@
                             <option value="en"{% if 'en' === language %} selected="selected"{% endif %}>{{ langData['languageEnglish'] }}</option>
                             <option value="zh"{% if 'zh' === language %} selected="selected"{% endif %}>{{ langData['languageChineseSimplified'] }}</option>
                             <option value="el"{% if 'el' === language %} selected="selected"{% endif %}>{{ langData['languageGreek'] }}</option>
+                            <option value="el"{% if 'ru' === language %} selected="selected"{% endif %}>{{ langData['languageRussian'] }}</option>
                         </select>
                     </li>
                 </ul>
