@@ -27,6 +27,7 @@
   "languageEnglish": "English",
   "languageGreek": "Greek",
   "languageRussian": "Russian",
+  "languageUkranian": "Ukranian",
   "main": "Main",
   "memorySafety": "Memory safety",
   "memorySafetyDescription": "Despite being a compiled language, it does not allow you to use pointers, it provides a garbage collector to avoid memory leaks and more.",
