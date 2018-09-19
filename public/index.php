@@ -2,17 +2,17 @@
 
 /** Autoloader */
 
-use Phalcon\Mvc\Micro;
 use Monolog\Formatter\LineFormatter;
 use Monolog\Handler\StreamHandler;
 use Monolog\Logger;
 use Phalcon\Config;
 use Phalcon\Di;
 use Phalcon\Di\FactoryDefault;
+use Phalcon\Mvc\Micro;
 use Phalcon\Mvc\View\Engine\Volt;
 use Phalcon\Mvc\View\Simple;
-use function Website\Core\appPath;
 use Website\ErrorHandler;
+use function Website\Core\appPath;
 
 require '../app/autoload.php';
 
@@ -28,17 +28,17 @@ $app = new Micro($container);
 /**
  * Config
  */
-$data   = require(appPath('app/config.php'));
+$data = require(appPath('app/config.php'));
 $config = new Config($data);
 $container->setShared('config', $config);
 
 /**
  * Logger
  */
-$logFile   = appPath('storage/logs/application.log');
+$logFile = appPath('storage/logs/application.log');
 $formatter = new LineFormatter("[%datetime%][%level_name%] %message%\n");
-$logger    = new Logger('zephir-logger');
-$handler   = new StreamHandler($logFile, Logger::DEBUG);
+$logger = new Logger('zephir-logger');
+$handler = new StreamHandler($logFile, Logger::DEBUG);
 $handler->setFormatter($formatter);
 $logger->pushHandler($handler);
 
@@ -59,7 +59,7 @@ register_shutdown_function([$handler, 'shutdown']);
  * View service
  */
 
-$options  = [
+$options = [
     'compiledPath'      => appPath('/storage/cache/'),
     'compiledSeparator' => '_',
     'compiledExtension' => '.php',
@@ -67,12 +67,12 @@ $options  = [
     'stat'              => true,
 ];
 
-$view  = new Simple();
+$view = new Simple();
 $view->setViewsDir(appPath('/app/views/'));
 $view->registerEngines(
     [
         '.volt' => function ($view) use ($options, $container) {
-            $volt  = new Volt($view, $container);
+            $volt = new Volt($view, $container);
             $volt->setOptions($options);
 
             return $volt;
@@ -91,18 +91,32 @@ $app->get(
 );
 
 $app->get(
-    '/{lang}',
+    '/{lang:[a-z]{2}}',
     function () use ($app) {
-        $params   = $app->getRouter()->getParams();
-        $language = $params['lang'] ?? 'en';
-        $language = (true !== empty($language)) ? $language : 'en';
-        $data     = file_get_contents(appPath("storage/languages/{$language}.json"));
-        $data     = json_decode($data, true);
-        $output   = $app->viewSimple->render(
+        // the values must have a translation file in storage/languages/{$language}.json
+        $languages = [
+            'en' => 'English', // first is default
+            'zh' => 'ChineseSimplified',
+            'el' => 'Greek',
+            'ru' => 'Russian',
+            'es' => 'Spanish',
+            'uk' => 'Ukranian',
+        ];
+
+        $lang = $app->getRouter()->getParams()['lang'] ?? null;
+
+        // current language
+        $language = isset($languages[$lang]) ? $lang : current($languages);
+
+        $data = file_get_contents(appPath("storage/languages/{$language}.json"));
+        $data = json_decode($data, true);
+
+        $output = $app->viewSimple->render(
             'index',
             [
-                'language' => $language,
-                'langData' => $data,
+                'languages' => $languages,
+                'language'  => $language,
+                'langData'  => $data,
             ]
         );
 

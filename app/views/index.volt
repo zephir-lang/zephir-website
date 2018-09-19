@@ -1,5 +1,5 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="{{ language }}">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -55,11 +55,11 @@
                     </li>
                     <li>
                         <select class="languageSelector">
-                            <option value="en"{% if 'en' === language %} selected="selected"{% endif %}>{{ langData['languageEnglish'] }}</option>
-                            <option value="zh"{% if 'zh' === language %} selected="selected"{% endif %}>{{ langData['languageChineseSimplified'] }}</option>
-                            <option value="el"{% if 'el' === language %} selected="selected"{% endif %}>{{ langData['languageGreek'] }}</option>
-                            <option value="ru"{% if 'ru' === language %} selected="selected"{% endif %}>{{ langData['languageRussian'] }}</option>
-                            <option value="uk"{% if 'uk' === language %} selected="selected"{% endif %}>{{ langData['languageUkranian'] }}</option>
+                        {% for langKey, langName in languages %}
+                            <option value="{{ langKey }}"{% if langKey === language %} selected="selected"{% endif %}>
+                                {{ langData['language' ~ langName] }}
+                            </option>
+                        {% endfor %}
                         </select>
                     </li>
                 </ul>
@@ -190,7 +190,7 @@
 
         <div class="developed">
             <div class="content">
-                {{ langData['websiteDesignedBy'] }}Website designed by:
+                {{ langData['websiteDesignedBy'] }}
                 <a href="http://www.mctekk.com/" class="logo">
                     <img src="images/mctekk-logo.png" alt=""/>
                 </a>
