@@ -39,7 +39,7 @@
   "seeWhatZCanDo": "See what zephir can do!",
   "support": "Support",
   "team": "Team",
-  "title": "Build PHP extensions is easy with Zephir",
+  "title": "Building PHP extensions is easy with Zephir",
   "typeSystem": "Type System",
   "typeSystemDescription": "Zephir combines static and dynamic typing in a friendly language that is compiled down to machine code using the industry standard compilers.",
   "version": "Zephir version 0.9.4",
