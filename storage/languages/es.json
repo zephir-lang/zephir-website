@@ -39,7 +39,7 @@
   "seeWhatZCanDo": "¡Mira lo que Zephir puede hacer!",
   "support": "Soporte",
   "team": "Equipo",
-  "title": "Building PHP extensions is easy with Zephir",
+  "title": "Crear extensiones de PHP es fácil con Zephir",
   "typeSystem": "Tipo de sistema",
   "typeSystemDescription": "Zephir combina el tipificado estático y dinámico en un lenguaje amigable, este es compilado a código de máquina utilizando los compiladores estándar de la industria.",
   "version": "Zephir versión 0.9.4",
