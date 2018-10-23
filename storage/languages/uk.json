@@ -39,7 +39,7 @@
   "seeWhatZCanDo": "Дивіться, що може zephir!",
   "support": "Підтримка",
   "team": "Команда",
-  "title": "Building PHP extensions is easy with Zephir",
+  "title": "Спростіть створення PHP-розширення із Zephir",
   "typeSystem": "Система типізації",
   "typeSystemDescription": "Zephir поєднує в собі статичну та динамічну типізацію, яка компілюється в машинний код, використовуючи стандартні компілятори індустрії.",
   "version": "Zephir версія 0.9.4",
