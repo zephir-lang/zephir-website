@@ -1,6 +1,10 @@
 /*=============================================================================================================================================
 ================================================================ GENERAL STYLE ================================================================
 =============================================================================================================================================*/
+html {
+  overflow-x: hidden;
+}
+
 * { box-sizing: border-box; }
 
 body {
@@ -343,9 +347,9 @@ footer {
 	#calltoaction h1 br { display: none; }
 	#calltoaction .try-btn .btn { padding: 5px 10px; width: 210px; }
 	#calltoaction .try-btn .btn:first-child { margin-right: 5px; }
-	#rotated_box { margin: 0 0 100px -45px; padding: 60px 40px; width: 102%; }
-	#rotated_box .content { padding-right: 0; }
-	#rotated_box .content .column { float: none; margin: 0 auto 50px !important; width: 300px; }
+	#rotated_box { margin: 0 0 100px -60px; padding: 60px; width: 100%; }
+	#rotated_box .content { padding-right: 0; padding-left: 0}
+	#rotated_box .content .column { float: none; margin: 0 auto 50px !important; width: 270px; }
 	#rotated_box .content .column:nth-child(3n) { margin-bottom: 0 !important; }
 	#about_project { margin-top: -180px; }
 	.left-content, .right-content { float: none; width: 100%; }
