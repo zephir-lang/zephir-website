@@ -336,6 +336,7 @@ footer {
 	.left-content { width: 60%; }
 	.left-content .col { width: 28%; }
 	.right-content { width: 38%; }
+	.languageSelector { margin: 20px 30px }
 
 }
 
