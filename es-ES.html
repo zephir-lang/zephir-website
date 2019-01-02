@@ -1,0 +1,180 @@
+---
+layout: default
+language: es-ES
+permalink: /es-ES
+---
+    <header class="landing">
+        <div id="navbar" class="content">
+            <h2 id="logo">
+                <img src="/assets/images/zephir_logo.png" alt="">
+            </h2>
+            <div class="responsive_nav">
+                <i class="fa fa-bars"></i>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current">
+                        <a href="/">
+                            {{ site.data.es-ES.home }}
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/phalcon/zephir">
+                            {{ site.data.es-ES.github }}
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://docs.zephir-lang.com/">
+                            {{ site.data.es-ES.documentation }}
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://forum.zephir-lang.com/">
+                            {{ site.data.es-ES.support }}
+                        </a>
+                    </li>
+                    <li>
+                        <select class="languageSelector"
+                                onchange="javascript:location.href = this.value;">
+                            {% for language in site.app.languages %}
+                            <option value="{{ site.url }}/{{ language }}"{% if language == page.language %} selected="selected"{% endif %}>
+                                {{ site.data.supported[language].name }}
+                            </option>
+                            {% endfor %}
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+            <div class="clear"></div>
+        </div>
+        <div id="calltoaction" class="content">
+            <div class="cd-intro">
+                <h1 class="cd-headline slide">
+                    <span>{{ site.data.es-ES.encancePhp }} </span>
+                    <span class="cd-words-wrapper">
+                            <b class="is-visible">{{ site.data.es-ES.encancePhpFaster }}</b>
+                            <b>{{ site.data.es-ES.encancePhpBetter }}</b>
+                            <b>{{ site.data.es-ES.encancePhpReliable }}</b>
+                        </span><br/>
+                    <!--<span>While Improving The User Experience</span>-->
+                </h1>
+            </div><!-- END HEADLINE ANIMATION -->
+
+            <div class="try-btn">
+                <a href="https://github.com/phalcon/zephir" class="btn btn-pink">
+                    <i class="fa fa-download"></i> {{ site.data.es-ES.download }}
+                    <span class="description">{{ site.data.es-ES.version }} {{ site.app.version }}</span>
+                </a>
+                <a href="#" class="btn btn-blue">
+                    <i class="fa fa-play-circle-o"></i> {{ site.data.es-ES.aSmallTaste }}
+                    <span class="description">{{ site.data.es-ES.seeWhatZCanDo }}</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div id="rotated_box">
+            <div class="content">
+                <div class="column">
+                    <div class="feacture_image"><img src="/assets/images/system.png"></div>
+                    <h3>{{ site.data.es-ES.typeSystem }}</h3>
+                    <p>{{ site.data.es-ES.typeSystemDescription }}</p>
+                </div>
+                <div class="column">
+                    <div class="feacture_image"><img src="/assets/images/memory.png"></div>
+                    <h3>{{ site.data.es-ES.memorySafety }}</h3>
+                    <p>{{ site.data.es-ES.memorySafetyDescription }}</p>
+                </div>
+                <div class="column">
+                    <div class="feacture_image"><img src="/assets/images/compilation.png">
+                    </div>
+                    <h3>{{ site.data.es-ES.compilationModel }}</h3>
+                    <p>{{ site.data.es-ES.compilationModelDescription }}</p>
+                </div>
+
+                <div class="clear"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about_project">
+        <div class="content">
+            <div class="col col-x5">
+                <h2>{{ site.data.es-ES.everythingYouNeed }}</h2>
+                <p>{{ site.data.es-ES.everythingYouNeedDescription1 }}</p>
+                <p>{{ site.data.es-ES.everythingYouNeedDescription2 }}</p>
+            </div>
+            <div class="col col-x5">
+                <h2>{{ site.data.es-ES.needAHand }}</h2>
+                <a href="https://docs.zephir-lang.com/en/latest/installation"
+                   class="bubbletext text-violet">
+                    {{ site.data.es-ES.howToInstall }}
+                </a>
+                <a href="https://docs.zephir-lang.com/en/latest/introduction"
+                   class="bubbletext text-violet">
+                    {{ site.data.es-ES.readTutorials }}
+                </a>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </section>
+
+    <section>
+        <div id="contributors"></div>
+    </section>
+
+    <footer>
+        <div class="content">
+            <div class="left-content">
+                <div class="col">
+                    <strong>{{ site.data.es-ES.main }}</strong>
+                    <a href="http://github.com/phalcon/zephir" class="download">
+                        {{ site.data.es-ES.download }}
+                    </a>
+                    <a href="http://docs.zephir-lang.com/">
+                        {{ site.data.es-ES.documentation }}
+                    </a>
+                    <a href="http://docs.zephir-lang.com/en/latest/installation">
+                        {{ site.data.es-ES.installation }}
+                    </a>
+                </div>
+                <div class="col">
+                    <strong>{{ site.data.es-ES.others }}</strong>
+                    <a href="http://docs.zephir-lang.com/en/latest/language">
+                        {{ site.data.es-ES.basicSyntax }}
+                    </a>
+                    <a href="http://docs.zephir-lang.com/en/latest/operators">
+                        {{ site.data.es-ES.operators }}
+                    </a>
+                    <a href="https://docs.zephir-lang.com/en/latest/arrays">
+                        {{ site.data.es-ES.arrays }}
+                    </a>
+                </div>
+                <div class="col">
+                    <strong>{{ site.data.es-ES.zephir }}</strong>
+                    <a href="#">{{ site.data.es-ES.whatIsIt }}</a>
+                    <a href="#">{{ site.data.es-ES.team }}</a>
+                    <a href="#">{{ site.data.es-ES.contactUs }}</a>
+                </div>
+            </div>
+            <div class="right-content">
+                <strong>{{ site.data.es-ES.getInTouch }}</strong>
+                <span>{{ site.data.es-ES.followUsOnSocialMedia }}</span>
+
+                <div class="social-links">
+                    <a href="http://twitter.com/zephirlang" class="tt-icon"></a>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+
+        <div class="developed">
+            <div class="content">
+                {{ site.data.es-ES.websiteDesignedBy }}
+                <a href="http://www.mctekk.com/" class="logo">
+                    <img src="/assets/images/mctekk-logo.png" alt=""/>
+                </a>
+            </div>
+        </div>
+    </footer>

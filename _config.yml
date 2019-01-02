@@ -1,0 +1,42 @@
+app:
+  title: 'Building PHP extensions is easy with Zephir'
+  name: 'Zephir Website'
+  author: 'Zephir Language Team'
+  description: 'Zephir is an open source, high-level/domain specific language designed to ease the creation and maintainability of extensions for PHP with a focus on type and memory safety'
+  keywords: 'zephir, language, php, domain specific language, php extensions, open source'
+  avatar: 'https://avatars3.githubusercontent.com/u/1221505?v=4'
+  email: 'team@phalconphp.com'
+  facebook:
+  github: 'phalcon'
+  rss: phalcon
+  twitter: 'zephirlang'
+  analytics: 'UA-90249744-3'
+  language: 'en'
+  version: '0.11.8'
+  languages: [
+    'en',
+    'zh-CN',
+    'el-GR',
+    'ru-RU',
+    'es-ES',
+    'uk-UA'
+  ]
+
+include:
+  _redirects
+
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    disable: true
+
+exclude:
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CNAME
+
+
+

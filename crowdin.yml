@@ -1,3 +1,0 @@
-files:
-  - source: /_data/en.json
-    translation: /_data/%locale%.json
