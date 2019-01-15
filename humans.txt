@@ -1,0 +1,27 @@
+/* TEAM */
+
+Chef: Nikolaos (Nikos) Dimopoulos
+Contact: nikos [at] phalconphp.com
+GitHub: @niden
+From: Charles Town, WV, USA
+
+Developer: Serghei (klay) Iakovlev
+Contact: serghei [at] phalconphp.com
+GitHub: @sergeyklay
+From: Kyiv, Ukraine
+
+/* THANKS */
+
+Thanks to all our translators!
+For more see: https://crowdin.com/project/zephir-website
+
+Now that you're here, why not start contributing as well? :)
+
+/* SITE */
+
+Last update: 2018/12/08
+Language: Jekyll
+Doctype: HTML5
+Standards: HTML5, CSS3
+Components: Twitter Bootstrap, jQuery, Google Fonts, highlight.js
+
