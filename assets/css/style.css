@@ -786,3 +786,11 @@ footer {
   }
 
 }
+
+.github-icon {
+  background: none !important;
+}
+
+.github-icon svg {
+  fill: #fff;
+}
