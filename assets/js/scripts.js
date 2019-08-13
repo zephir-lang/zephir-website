@@ -152,3 +152,25 @@ jQuery(document).ready(function($){
         $newWord.removeClass('is-hidden').addClass('is-visible');
     }
 });
+
+$(document).ready(
+  function () {
+      $('.responsive_nav').click(
+        function () {
+            var nav_element;
+            var body_element;
+
+            nav_element  = $('nav');
+            body_element = $('body');
+
+            if (nav_element.hasClass('slide')) {
+                nav_element.removeClass('slide');
+                body_element.removeClass('overflow');
+            } else {
+                nav_element.addClass('slide');
+                body_element.addClass('overflow');
+            }
+        }
+      );
+  }
+);

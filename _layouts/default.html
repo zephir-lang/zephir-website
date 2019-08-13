@@ -103,29 +103,6 @@
         integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
         crossorigin="anonymous"></script>
 <script type="text/javascript" src="/assets/js/scripts.js?v{{ site.time | date: '%s%N' }}"></script>
-<script type="text/javascript">
-    $(document).ready(
-        function () {
-            $('.responsive_nav').click(
-                function () {
-                    var nav_element;
-                    var body_element;
-
-                    nav_element  = $('nav');
-                    body_element = $('body');
-
-                    if (nav_element.hasClass('slide')) {
-                        nav_element.removeClass('slide');
-                        body_element.removeClass('overflow');
-                    } else {
-                        nav_element.addClass('slide');
-                        body_element.addClass('overflow');
-                    }
-                }
-            );
-        }
-    );
-</script>
 
 </body>
 </html>
