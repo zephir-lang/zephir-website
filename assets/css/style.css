@@ -787,7 +787,8 @@ footer {
 
 }
 
-.github-icon {
+.github-icon,
+.discord-icon {
   background: none !important;
 }
 
