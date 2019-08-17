@@ -618,7 +618,7 @@ footer {
   }
 
   nav ul li a {
-    padding: 8px 30px;
+    padding: 8px 15px;
   }
 
   .content {
@@ -684,7 +684,7 @@ footer {
   }
 
   .languageSelector {
-    margin: 20px 30px;
+    margin: 20px 15px;
   }
 
 }
