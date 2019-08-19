@@ -800,7 +800,3 @@ footer {
 .github-icon svg {
   fill: #fff;
 }
-
-.menu--open {
-  overflow: hidden;
-}
