@@ -269,6 +269,7 @@ body {
 }
 
 .btn-blue {
+  display: none;
   background-color: #4d64b7;
   border-color: #394fa2;
 }
