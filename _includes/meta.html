@@ -1,4 +1,3 @@
-
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,16 +7,26 @@
 <meta name="application-name" content="{{ site.data[page.language].title }}">
 <meta name="description" content="{{ site.data[page.language].description }}">
 
+<!-- Facebook -->
+<meta property="og:url" content="{{ site.app.url }}">
+<meta property="og:locale" content="{{ page.language }}">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{ site.app.name }}">
+<meta property="og:description" content="{{ site.app.description }}">
+<meta property="og:site_name" content="{{ site.app.name }}">
+<meta property="og:image" content="https://assets.phalcon.io/zephir/logo.png">
+<meta property="og:image:secure_url" content="https://assets.phalcon.io/zephir/logo.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ site.data[page.language].title }}">
-<meta name="twitter:description" content="{{ site.data[page.language].title }}">
-<meta name="twitter:image:src" content="https://assets.phalcon.io/zephir/logo.png">
-
-<!-- Facebook -->
-<meta property="og:title" content="{{ site.data[page.language].title }}">
-<meta property="og:description" content="{{ site.data[page.language].title }}">
-<meta property="og:image" content="https://assets.phalcon.io/zephir/logo.png">
+<meta name="twitter:title" content="{{ site.app.name }}">
+<meta name="twitter:description" content="{{ site.app.description }}">
+<meta name="twitter:image" content="https://assets.phalcon.io/zephir/logo.png">
+<meta name="twitter:image:alt" content="{{ site.app.name }}">
+<meta name="twitter:site" content="@{{ site.social.twitter }}">
+<meta name="twitter:creator" content="Zephir Language Team">
 
 <link rel="apple-touch-icon-precomposed"
       sizes="57x57"
@@ -96,11 +105,10 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id{{ site.app.analytics }}"></script>
 <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    gtag('config', '{{ site.app.analytics }}');
+  gtag('config', '{{ site.app.analytics }}');
 </script>
 {% endif %}
-
