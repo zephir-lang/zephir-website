@@ -4,6 +4,7 @@
   "arrays": "Arrays",
   "author": "Equipo del Lenguaje Zephir",
   "basicSyntax": "Sintaxis básica",
+  "blog": "blog",
   "compilationModel": "Modelo de compilación",
   "compilationModelDescription": "Zephir toma ventaja del ecosistema de extensiones disponible en PHP para permitirte crear tus propias extensiones como librerías compartidas en Linux/OSX y DLLs en Windows.",
   "contactUs": "Contáctanos",
@@ -42,7 +43,7 @@
   "title": "Crear extensiones de PHP es fácil con Zephir",
   "typeSystem": "Tipo de sistema",
   "typeSystemDescription": "Zephir combina el tipificado estático y dinámico en un lenguaje amigable, este es compilado a código de máquina utilizando los compiladores estándar de la industria.",
-  "version": "Zephir version",
+  "version": "Zephir versión",
   "websiteDesignedBy": "Sitio web diseñado por",
   "whatIsIt": "¿Qué es?",
   "zephir": "Zephir"
