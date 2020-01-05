@@ -698,6 +698,7 @@ footer {
 
   #calltoaction {
     margin-top: 10%;
+    overflow-x: hidden;
   }
 
   #calltoaction h1 {
