@@ -326,11 +326,14 @@ header.landing {
 }
 
 .responsive_nav {
+  position: relative;
   cursor: pointer;
   color: #fafafa;
   display: none;
   float: right;
   font-size: 38px;
+  width: 32px;
+  height: 32px;
 }
 
 nav {
@@ -801,4 +804,36 @@ footer {
 
 .github-icon svg {
   fill: #fff;
+}
+
+.mobile-menu-trigger {
+  position: absolute;
+  top: 2px;
+  width: 40px;
+  height: 4px;
+  transition-timing-function: ease;
+  transition-duration: .15s;
+  transition-property: transform;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.mobile-menu-trigger:before,
+.mobile-menu-trigger:after {
+  position: absolute;
+  width: 40px;
+  height: 4px;
+  transition-timing-function: ease;
+  transition-duration: .15s;
+  transition-property: transform;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.mobile-menu-trigger:before {
+  top: 6px
+}
+
+.mobile-menu-trigger:after {
+  top: 10px;
 }
