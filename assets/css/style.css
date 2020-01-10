@@ -820,6 +820,7 @@ footer {
 
 .mobile-menu-trigger:before,
 .mobile-menu-trigger:after {
+  content: '';
   position: absolute;
   width: 40px;
   height: 4px;
