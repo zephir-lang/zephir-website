@@ -332,8 +332,8 @@ header.landing {
   display: none;
   float: right;
   font-size: 38px;
-  width: 32px;
-  height: 32px;
+  width: 33px;
+  height: 33px;
 }
 
 nav {
@@ -814,7 +814,6 @@ footer {
   transition-timing-function: ease;
   transition-duration: .15s;
   transition-property: transform;
-  border-radius: 2px;
   background-color: #fff;
 }
 
@@ -827,14 +826,13 @@ footer {
   transition-timing-function: ease;
   transition-duration: .15s;
   transition-property: transform;
-  border-radius: 2px;
   background-color: #fff;
 }
 
 .mobile-menu-trigger:before {
-  top: 9px
+  top: 11px
 }
 
 .mobile-menu-trigger:after {
-  top: 19px;
+  top: 21px;
 }
