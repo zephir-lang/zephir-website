@@ -203,7 +203,6 @@ body {
   font-family: 'Lato', sans-serif;
   line-height: 34px;
   overflow-x: hidden;
-  padding-top: 830px;
 
 }
 
@@ -311,10 +310,9 @@ body {
 header.landing {
   background: url("../images/background_header.png") 50%;
   background-size: cover;
-  height: 1120px;
-  position: absolute;
   padding-top: 40px;
-  top: 0;
+  padding-bottom: 270px;
+  margin-bottom: -70px;
   width: 100%;
   z-index: 255;
 }
