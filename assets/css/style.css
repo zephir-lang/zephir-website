@@ -590,11 +590,6 @@ footer {
 =============================================================================================================================================*/
 
 @media only screen and (max-width: 980px) {
-
-  body {
-    padding-top: 700px;
-  }
-
   .responsive_nav {
     display: block;
   }
@@ -691,11 +686,6 @@ footer {
 }
 
 @media only screen and (max-width: 680px) {
-
-  body {
-    padding-top: 500px;
-  }
-
   #calltoaction {
     margin-top: 10%;
     overflow-x: hidden;
@@ -757,11 +747,6 @@ footer {
 }
 
 @media only screen and (max-width: 480px) {
-
-  body {
-    padding-top: 600px;
-  }
-
   nav {
     left: -250px;
     width: 250px;
