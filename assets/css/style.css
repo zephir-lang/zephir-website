@@ -744,6 +744,10 @@ footer {
     text-align: left;
   }
 
+  header.landing {
+    padding-bottom: 160px;
+  }
+
 }
 
 @media only screen and (max-width: 480px) {
