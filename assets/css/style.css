@@ -724,6 +724,7 @@ footer {
     float: none;
     margin: 0 auto 50px !important;
     width: 270px;
+    padding: 0 20px;
   }
 
   #rotated_box .content .column:nth-child(3n) {
