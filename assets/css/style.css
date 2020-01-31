@@ -723,7 +723,7 @@ footer {
   #rotated_box .content .column {
     float: none;
     margin: 0 auto 50px !important;
-    width: 270px;
+    width: 100%;
     padding: 0 20px;
   }
 
