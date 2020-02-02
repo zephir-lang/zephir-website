@@ -161,7 +161,7 @@ $(document).ready(
             var body_element;
 
             nav_element  = $('nav');
-            body_element = $('body');
+            body_element = $('html');
 
             if (nav_element.hasClass('slide')) {
                 nav_element.removeClass('slide');
