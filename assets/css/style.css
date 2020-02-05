@@ -266,22 +266,6 @@ body {
   border-color: #bf1943;
 }
 
-.btn-blue {
-  display: none;
-  background-color: #4d64b7;
-  border-color: #394fa2;
-}
-
-.btn-blue:hover {
-  background-color: #566fc9;
-  border-color: #3e56b2;
-}
-
-.btn-blue:active {
-  background-color: #3e56b2;
-  border-color: #3e56b2;
-}
-
 /*COLUMNS*/
 .col {
   box-sizing: border-box;
