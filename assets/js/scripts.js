@@ -153,24 +153,23 @@ jQuery(document).ready(function($){
     }
 });
 
-$(document).ready(
-  function () {
-      $('.responsive_nav').click(
-        function () {
-            var nav_element;
-            var html_element;
+var documentReady = function (callback) {
+    if (document.readyState !== "loading") callback();
+    else document.addEventListener("DOMContentLoaded", callback);
+};
 
-            nav_element  = $('nav');
-            html_element = $('html');
+documentReady(function () {
+    var selector = document.querySelector('.responsive_nav');
+    var navSelector = document.querySelector('nav');
+    var elSelector = document.querySelector('html');
 
-            if (nav_element.hasClass('slide')) {
-                nav_element.removeClass('slide');
-                html_element.removeClass('overflow');
-            } else {
-                nav_element.addClass('slide');
-                html_element.addClass('overflow');
-            }
+    selector.addEventListener('click', function (e) {
+        if (navSelector.classList.contains('slide')) {
+            navSelector.classList.remove('slide');
+            elSelector.classList.remove('overflow');
+        } else {
+            navSelector.classList.add('slide');
+            elSelector.classList.add('overflow');
         }
-      );
-  }
-);
+    })
+});
