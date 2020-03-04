@@ -20,7 +20,7 @@ If you are interested in translating our main website, you can visit [our projec
 
 ## License
 
-This project is open-sourced software licensed under the MIT License. See the LICENSE file for more information.
+This project is open-sourced software licensed under the MIT License. See the [LICENSE](https://github.com/zephir-lang/zephir-website/blob/master/LICENSE) file for more information.
 © Zephir Team and contributors
 
 ## Thank you
