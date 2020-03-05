@@ -581,7 +581,6 @@ footer {
   nav {
     background-color: rgba(26, 20, 27, 0.95);
     height: 100vh;
-    left: -320px;
     position: absolute;
     top: -5px;
     width: 300px;
@@ -590,6 +589,7 @@ footer {
 
   nav.slide {
     left: 0;
+    transform: translateX(0);
     z-index: 260;
   }
 
@@ -738,7 +738,7 @@ footer {
 
 @media only screen and (max-width: 480px) {
   nav {
-    left: -250px;
+    transform: translateX(-100%);
     width: 250px;
   }
 
