@@ -583,8 +583,10 @@ footer {
     height: 100vh;
     position: absolute;
     top: -5px;
+    left: 0;
     width: 300px;
     z-index: 99;
+    transform: translateX(-100%);
   }
 
   nav.slide {
@@ -738,7 +740,6 @@ footer {
 
 @media only screen and (max-width: 480px) {
   nav {
-    transform: translateX(-100%);
     width: 250px;
   }
 
