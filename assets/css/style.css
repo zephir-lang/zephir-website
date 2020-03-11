@@ -278,7 +278,7 @@ body {
 }
 
 /*CONTRIBUTORS*/
-#contributors {
+.contributors {
   background: url('../images/contributors.png');
   background-size: cover;
   border-bottom: 5px solid #604687;
