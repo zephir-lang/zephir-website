@@ -526,16 +526,29 @@ footer {
 
 .right-content .social-links {
   margin-top: 15px;
+  display: flex;
+  justify-content: center;
 }
 
 .right-content .social-links a {
   background: url('../images/social.png') no-repeat;
   background-size: 120px;
-  display: inline-block;
-  vertical-align: top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 40px;
   margin-right: 5px;
   width: 40px;
+}
+
+.twitter-icon {
+  background: none !important;
+}
+
+.twitter-icon svg {
+  fill: #ffffff;
+  width: 40px;
+  height: 40px;
 }
 
 .right-content .social-links a:last-child {
@@ -777,6 +790,8 @@ footer {
 
 .github-icon svg {
   fill: #fff;
+  width: 35px;
+  height: 35px;
 }
 
 .mobile-menu-trigger {
