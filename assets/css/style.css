@@ -531,18 +531,12 @@ footer {
 }
 
 .right-content .social-links a {
-  background: url('../images/social.png') no-repeat;
-  background-size: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 40px;
   margin-right: 5px;
   width: 40px;
-}
-
-.twitter-icon {
-  background: none !important;
 }
 
 .twitter-icon svg {
@@ -553,14 +547,6 @@ footer {
 
 .right-content .social-links a:last-child {
   margin: 0;
-}
-
-.right-content .social-links a.fb-icon {
-  background-position: -41px 0;
-}
-
-.right-content .social-links a.gg-icon {
-  background-position: -80px 0;
 }
 
 .developed {
