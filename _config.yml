@@ -12,7 +12,7 @@ app:
   twitter: 'zephirlang'
   analytics: 'UA-90249744-3'
   language: 'en'
-  version: '0.12.17'
+  version: '0.12.18'
   languages: [
     'en',
     'zh-CN',
