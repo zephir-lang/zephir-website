@@ -1,15 +1,3 @@
-.cd-title {
-  height: 160px;
-  line-height: 230px;
-  position: relative;
-  text-align: center;
-}
-
-.cd-title h1 {
-  font-size: 2.4rem;
-  font-weight: 700;
-}
-
 .cd-words-wrapper {
   display: inline-block;
   position: relative;
@@ -279,7 +267,7 @@ body {
 
 /*CONTRIBUTORS*/
 .contributors {
-  background: url('../images/contributors.png');
+  background-image: url('../images/contributors.png');
   background-size: cover;
   border-bottom: 5px solid #604687;
   border-top: 5px solid #604687;
@@ -292,7 +280,8 @@ body {
 =============================================================================================================================================*/
 
 header.landing {
-  background: url("../images/background_header.png") 50%;
+  background-image: url("../images/background_header.png");
+  background-position: 50%;
   background-size: cover;
   padding-top: 40px;
   padding-bottom: 270px;
@@ -347,7 +336,8 @@ nav ul li a {
   -webkit-transition: .3s;
 }
 
-nav ul li.current a, nav ul li a:hover {
+nav ul li.current a,
+nav ul li a:hover {
   box-shadow: 0 2px 0 #c2b5ff;
 }
 
