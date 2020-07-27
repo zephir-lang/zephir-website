@@ -1,2 +1,5 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
-<script src="/assets/js/scripts.min.js"></script>
+{% if page.url == "/404.html" %}
+{% else %}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+  <script src="/assets/js/scripts.min.js"></script>
+{% endif %}
