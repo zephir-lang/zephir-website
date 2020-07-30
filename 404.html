@@ -4,12 +4,124 @@ title: Page Not Found
 permalink: /404.html
 ---
 
-<section class="landing landing--error">
-  <div class="content">
-    <h1>Page not found.</h1>
-    <p>Sorry – the page you're looking for doesn't exist.</p>
-    <p>Perhaps you typed the URL incorrectly, or it may have moved.</p>
-    <p><a href="/">Back To Home</a></p>
+<header class="landing landing--error">
+  <div class="content navbar">
+    <div id="logo">
+      <img src="/assets/images/zephir_logo.png" alt="Zephir logo">
+    </div>
+    <div class="responsive_nav">
+      <div class="mobile-menu-trigger"></div>
+    </div>
+    <nav>
+      <ul>
+        <li class="current">
+          <a href="/">
+            {{ site.data.en.home }}
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/phalcon/zephir">
+            {{ site.data.en.github }}
+          </a>
+        </li>
+        <li>
+          <a href="https://docs.zephir-lang.com/">
+            {{ site.data.en.documentation }}
+          </a>
+        </li>
+        <li>
+          <a href="https://blog.zephir-lang.com/">
+            {{ site.data.en.blog }}
+          </a>
+        </li>
+        <li>
+          <select class="languageSelector"
+                  onchange="javascript:location.href = this.value;">
+            {% for language in site.app.languages %}
+            <option value="{{ site.url }}/{{ language }}"{% if language == page.language %} selected="selected"{% endif %}>
+              {{ site.data.supported[language].name }}
+            </option>
+            {% endfor %}
+          </select>
+        </li>
+      </ul>
+    </nav>
+    <div class="clear"></div>
+    <div id="calltoaction" class="content">
+      <h1>Page not found.</h1>
+      <p>Sorry – the page you're looking for doesn't exist.</p>
+      <p>Perhaps you typed the URL incorrectly, or it may have moved.</p>
+      <p><a href="/">Back To Home</a></p>
+    </div>
   </div>
-</section>
+</header>
+
+<footer>
+  <div class="content">
+    <div class="left-content">
+      <div class="col">
+        <strong>{{ site.data.en.main }}</strong>
+        <a href="https://github.com/phalcon/zephir" class="download">
+          {{ site.data.en.download }}
+        </a>
+        <a href="https://docs.zephir-lang.com/">
+          {{ site.data.en.documentation }}
+        </a>
+        <a href="https://docs.zephir-lang.com/en/latest/installation">
+          {{ site.data.en.installation }}
+        </a>
+      </div>
+      <div class="col">
+        <strong>{{ site.data.en.others }}</strong>
+        <a href="https://docs.zephir-lang.com/en/latest/language">
+          {{ site.data.en.basicSyntax }}
+        </a>
+        <a href="https://docs.zephir-lang.com/en/latest/operators">
+          {{ site.data.en.operators }}
+        </a>
+        <a href="https://docs.zephir-lang.com/en/latest/arrays">
+          {{ site.data.en.arrays }}
+        </a>
+      </div>
+      <div class="col">
+        <strong>{{ site.data.en.zephir }}</strong>
+        <a href="https://phalcon.io/{{ page.language }}/team">{{ site.data.en.team }}</a>
+        <a href="mailto:team@phalcon.io">{{ site.data.en.contactUs }}</a>
+        <a href="https://blog.zephir-lang.com/">{{ site.data.en.blog }}</a>
+      </div>
+    </div>
+    <div class="right-content">
+      <strong>{{ site.data.en.getInTouch }}</strong>
+      <span>{{ site.data.en.followUsOnSocialMedia }}</span>
+
+      <div class="social-links">
+        <a href="https://twitter.com/zephirlang" class="twitter-icon">
+          <svg height="56.693" viewBox="0 0 56.693 56.693" width="56.693" xmlns="http://www.w3.org/2000/svg"><path d="M28.348 5.157c-13.6 0-24.625 11.027-24.625 24.625 0 13.6 11.025 24.623 24.625 24.623s24.623-11.023 24.623-24.623c0-13.598-11.024-24.625-24.623-24.625zm12.404 19.66c.013.266.018.533.018.803 0 8.201-6.242 17.656-17.656 17.656a17.572 17.572 0 01-9.513-2.787c.486.057.979.086 1.48.086a12.45 12.45 0 007.707-2.656 6.214 6.214 0 01-5.796-4.311 6.06 6.06 0 001.167.111c.566 0 1.114-.074 1.635-.217a6.21 6.21 0 01-4.979-6.084l.001-.08a6.184 6.184 0 002.811.777 6.204 6.204 0 01-2.761-5.166c0-1.137.306-2.204.84-3.12a17.618 17.618 0 0012.792 6.483 6.206 6.206 0 016.045-7.619 6.2 6.2 0 014.529 1.959 12.395 12.395 0 003.941-1.506 6.223 6.223 0 01-2.73 3.433 12.407 12.407 0 003.565-.977 12.537 12.537 0 01-3.096 3.215z"/></svg>
+        </a>
+        <a href="https://github.com/phalcon/zephir" class="github-icon">
+          <svg height="40" version="1.1" viewBox="0 0 16 16" width="40" style="">
+            <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+          </svg>
+        </a>
+        <a href="https://phalcon.link/discord" class="discord-icon">
+          <svg width="40" xmlns="http://www.w3.org/2000/svg" id="Layer_1" viewBox="0 0 245 240">
+            <style>.st0{fill:#FFFFFF;}</style>
+            <path class="st0" d="M104.4 103.9c-5.7 0-10.2 5-10.2 11.1s4.6 11.1 10.2 11.1c5.7 0 10.2-5 10.2-11.1.1-6.1-4.5-11.1-10.2-11.1zM140.9 103.9c-5.7 0-10.2 5-10.2 11.1s4.6 11.1 10.2 11.1c5.7 0 10.2-5 10.2-11.1s-4.5-11.1-10.2-11.1z"></path>
+            <path class="st0" d="M189.5 20h-134C44.2 20 35 29.2 35 40.6v135.2c0 11.4 9.2 20.6 20.5 20.6h113.4l-5.3-18.5 12.8 11.9 12.1 11.2 21.5 19V40.6c0-11.4-9.2-20.6-20.5-20.6zm-38.6 130.6s-3.6-4.3-6.6-8.1c13.1-3.7 18.1-11.9 18.1-11.9-4.1 2.7-8 4.6-11.5 5.9-5 2.1-9.8 3.5-14.5 4.3-9.6 1.8-18.4 1.3-25.9-.1-5.7-1.1-10.6-2.7-14.7-4.3-2.3-.9-4.8-2-7.3-3.4-.3-.2-.6-.3-.9-.5-.2-.1-.3-.2-.4-.3-1.8-1-2.8-1.7-2.8-1.7s4.8 8 17.5 11.8c-3 3.8-6.7 8.3-6.7 8.3-22.1-.7-30.5-15.2-30.5-15.2 0-32.2 14.4-58.3 14.4-58.3 14.4-10.8 28.1-10.5 28.1-10.5l1 1.2c-18 5.2-26.3 13.1-26.3 13.1s2.2-1.2 5.9-2.9c10.7-4.7 19.2-6 22.7-6.3.6-.1 1.1-.2 1.7-.2 6.1-.8 13-1 20.2-.2 9.5 1.1 19.7 3.9 30.1 9.6 0 0-7.9-7.5-24.9-12.7l1.4-1.6s13.7-.3 28.1 10.5c0 0 14.4 26.1 14.4 58.3 0 0-8.5 14.5-30.6 15.2z"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="clear"></div>
+
+  <div class="developed">
+    <div class="content">
+      {{ site.data.en.websiteDesignedBy }}
+      <a href="https://www.mctekk.com/" class="logo">
+        <img src="/assets/images/mctekk-logo.png" alt="mctekk"/>
+      </a>
+    </div>
+  </div>
+</footer>
 

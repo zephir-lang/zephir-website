@@ -14,8 +14,9 @@ jQuery(document).ready(function($){
         revealDuration = 600,
         revealAnimationDelay = 1500;
 
-    initHeadline();
-
+    if($('.cd-words-wrapper').length) {
+        initHeadline();
+    }
 
     function initHeadline() {
         //insert <i> element for each letter of a changing word
