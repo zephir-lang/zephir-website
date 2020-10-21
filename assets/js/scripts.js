@@ -161,15 +161,18 @@ var documentReady = function (callback) {
 
 documentReady(function () {
     var selector = document.querySelector('.responsive_nav');
+    var mobileTrigger = document.querySelector('.mobile-menu-trigger');
     var navSelector = document.querySelector('nav');
     var elSelector = document.querySelector('html');
 
     selector.addEventListener('click', function (e) {
         if (navSelector.classList.contains('slide')) {
             navSelector.classList.remove('slide');
+            mobileTrigger.classList.remove('active');
             elSelector.classList.remove('overflow');
         } else {
             navSelector.classList.add('slide');
+            mobileTrigger.classList.add('active');
             elSelector.classList.add('overflow');
         }
     })
