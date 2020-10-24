@@ -778,6 +778,19 @@ footer {
   background-color: #fff;
 }
 
+.mobile-menu-trigger.active {
+  transform: translate3d(0,10px,0) rotate(45deg);
+}
+
+.mobile-menu-trigger.active:before {
+  transform: rotate(-45deg) translate3d(-5.71429px,-6px,0);
+  opacity: 0;
+}
+
+.mobile-menu-trigger.active:after {
+  transform: translate3d(0,-21px,0) rotate(-90deg);
+}
+
 .mobile-menu-trigger:before,
 .mobile-menu-trigger:after {
   content: '';
