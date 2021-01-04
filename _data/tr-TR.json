@@ -46,5 +46,9 @@
   "version": "Zephir Sürümü",
   "websiteDesignedBy": "Website tasarlayan",
   "whatIsIt": "Bu Nedir?",
-  "zephir": "Zephir"
+  "zephir": "Zephir",
+  "404PageTitle": "Page not found.",
+  "404PageParagraphFirst": "Sorry – the page you're looking for doesn't exist.",
+  "404PageParagraphSecond": "Perhaps you typed the URL incorrectly, or it may have moved.",
+  "404PageParagraphLink": "Back To Home"
 }
