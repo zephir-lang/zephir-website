@@ -290,6 +290,10 @@ header.landing {
   z-index: 255;
 }
 
+header.landing--error {
+  margin-bottom: 0;
+}
+
 #logo {
   margin: 0;
   float: left;
