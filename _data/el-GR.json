@@ -47,8 +47,8 @@
   "websiteDesignedBy": "Σχεδιασμός ιστοσελίδας",
   "whatIsIt": "Τι είναι;",
   "zephir": "Zephir",
-  "404PageTitle": "Page not found.",
-  "404PageParagraphFirst": "Sorry – the page you're looking for doesn't exist.",
-  "404PageParagraphSecond": "Perhaps you typed the URL incorrectly, or it may have moved.",
-  "404PageParagraphLink": "Back To Home"
+  "404PageTitle": "Η σελίδα δεν βρέθηκε.",
+  "404PageParagraphFirst": "Λυπούμαστε - Η σελίδα που ψάχνετε δεν υπάρχει.",
+  "404PageParagraphSecond": "Ίσως πληκτρολογήσατε εσφαλμένα το URL ή μπορεί να έχει μετακινηθεί.",
+  "404PageParagraphLink": "Πίσω στην αρχική"
 }
