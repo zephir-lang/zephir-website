@@ -4,7 +4,7 @@
   "arrays": "Масиви",
   "author": "Команда мови Zephir",
   "basicSyntax": "Базовий синтаксис",
-  "blog": "Блог",
+  "blog": "Блоґ",
   "compilationModel": "Компіляційна модель",
   "compilationModelDescription": "Zephir використовує переваги екосистеми розширень доступних на PHP, щоб дозволити вам створювати власні розширення, як спільні бібліотеки в Linux/OSX та DLL у Windows.",
   "contactUs": "Контакти",
