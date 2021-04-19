@@ -9,6 +9,7 @@
   "compilationModelDescription": "Zephir, kendi php uzantılarınızı Linux/OSX ve Windows DLL üzerinde paylaşılan kütüphaneler olarak oluşturmanıza izin vermek için PHP üzerinde bulunan ekosistem uzantısından yararlanır.",
   "contactUs": "Bize Ulaş",
   "description": "Zephir, PHP için uzantıların oluşturulmasını ve korunmasını kolaylaştırmak için tür ve bellek güvenliğine odaklanan, açık kaynaklı, üst düzey etki alanına özgü bir dildir.",
+  "discussions": "Discussions",
   "documentation": "Döküman",
   "download": "İndir",
   "encancePhp": "PHP Çerçeveleriniz/Kütüphaneleriniz artık ",
