@@ -24,10 +24,13 @@ app:
   ]
 
 include:
-  _redirects
+  - _redirects
 
 sass:
   style: compressed
+
+plugins:
+  - jekyll-sitemap
 
 kramdown:
   input: GFM
