@@ -1,0 +1,51 @@
+/*=============================================================================================================================================
+================================================================ ABOUT PROJECT ================================================================
+=============================================================================================================================================*/
+
+#about_project {
+  background-color: #ededed;
+  margin-top: -350px;
+
+  .content {
+    padding: 380px 10px 80px;
+  }
+
+  .col {
+    &:nth-child(1) {
+      border-right: 5px dashed #d5d5d5;
+      padding-right: 90px;
+    }
+
+    &:nth-child(2) {
+      padding: 60px 0 0 90px;
+    }
+
+    h2 {
+      color: #604687;
+      margin: 0 0 40px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    p {
+      text-align: justify;
+    }
+
+    .bubbletext {
+      display: block;
+    }
+  }
+}
+
+.bubbletext {
+  border-radius: 40px;
+  margin-bottom: 15px;
+  padding: 3px 10px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.text-violet {
+  background-color: #d8d4de;
+  color: #604687;
+}

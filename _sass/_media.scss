@@ -1,0 +1,195 @@
+/*=============================================================================================================================================
+================================================================ MEDIAQUERIES =================================================================
+=============================================================================================================================================*/
+
+@media only screen and (max-width: 980px) {
+  .responsive_nav {
+    display: block;
+  }
+
+  nav {
+    background-color: rgba(26, 20, 27, 0.95);
+    height: 100vh;
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 300px;
+    z-index: 99;
+    transform: translateX(-100%);
+
+    &.slide {
+      left: 0;
+      transform: translateX(0);
+      z-index: 260;
+    }
+
+    ul li {
+      float: none;
+      margin: 0;
+
+      a {
+        padding: 8px 15px;
+      }
+    }
+  }
+
+  .content {
+    padding: 0 20px;
+  }
+
+  header.landing {
+    padding-top: 20px;
+  }
+
+  #calltoaction {
+    margin-top: 15%;
+
+    h1 {
+      font-size: 2.8rem;
+    }
+  }
+
+  #rotated_box {
+    margin-bottom: 0;
+    padding: 100px 40px;
+  }
+
+  #about_project {
+    margin-top: -80px;
+
+    .content {
+      padding: 160px 20px 80px;
+    }
+
+    .col {
+      float: none;
+      padding: 0;
+      width: 100%;
+
+      &:nth-child(1) {
+        border-bottom: 5px dashed #d5d5d5;
+        border-right: 0;
+        padding: 0 0 20px;
+      }
+
+      &:nth-child(2) {
+        margin-top: 60px;
+        padding: 0;
+      }
+    }
+  }
+
+  footer, .right-content {
+    font-size: 1.1rem;
+  }
+
+  .left-content {
+    width: 60%;
+
+    .col {
+      width: 28%;
+    }
+  }
+
+  .right-content {
+    width: 38%;
+  }
+
+  .languageSelector {
+    margin: 20px 15px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  #calltoaction {
+    margin-top: 10%;
+    overflow-x: hidden;
+
+    h1 {
+      font-size: 28px;
+      line-height: 50px;
+
+      br {
+        display: none;
+      }
+    }
+
+    .try-btn .btn {
+      padding: 5px 10px;
+      width: 210px;
+
+      &:first-child {
+        margin-right: 5px;
+      }
+    }
+  }
+
+  #rotated_box {
+    margin: 0 0 100px -60px;
+    padding: 60px;
+    width: 100%;
+
+    .content {
+      padding-right: 0;
+      padding-left: 0;
+
+      .column {
+        float: none;
+        margin: 0 auto 50px !important;
+        width: 100%;
+        padding: 0 20px;
+
+        &:nth-child(3n) {
+          margin-bottom: 0 !important;
+        }
+      }
+    }
+  }
+
+  #about_project {
+    margin-top: -180px;
+  }
+
+  .left-content {
+    float: none;
+    width: 100%;
+  }
+
+  .right-content {
+    float: none;
+    width: 100%;
+    margin-top: 50px;
+    text-align: left;
+  }
+
+  header.landing {
+    padding-bottom: 160px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  nav {
+    width: 250px;
+  }
+
+  #calltoaction .try-btn {
+    margin-top: 30px;
+
+    .btn {
+      display: block;
+      margin: 0 auto 20px !important;
+
+      &:last-child {
+        margin-bottom: 0 !important;
+      }
+    }
+  }
+
+  .left-content .col {
+    border-bottom: 1px solid #3D3939;
+    float: none;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+}

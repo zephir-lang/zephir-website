@@ -1,0 +1,45 @@
+/*BUTTONS*/
+
+.btn {
+  border-radius: 4px;
+  border-bottom: 8px solid;
+  color: #fafafa;
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 8px 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: .3s;
+  -moz-transition: .3s;
+  -webkit-transition: .3s;
+  width: 250px;
+
+  i {
+    margin-right: 5px;
+  }
+
+  .description {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: normal;
+    margin: -5px 0;
+    text-transform: none;
+  }
+}
+
+.btn-pink {
+  background-color: #d02a54;
+  border-color: #ad173d;
+
+  &:hover {
+    background-color: #e22e5c;
+    border-color: #bf1943;
+  }
+
+  &:active {
+    background-color: #bf1943;
+    border-color: #bf1943;
+  }
+}
