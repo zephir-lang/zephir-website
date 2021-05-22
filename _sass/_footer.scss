@@ -1,0 +1,118 @@
+/*=============================================================================================================================================
+=================================================================== FOOTER ====================================================================
+=============================================================================================================================================*/
+
+footer {
+  color: #fafafa;
+  font-size: 0.9rem;
+  overflow: hidden;
+  padding: 40px 0 10px;
+}
+
+.left-content {
+  float: left;
+  overflow: hidden;
+  width: 50%;
+
+  .col {
+    margin-right: 8%;
+    width: 24%;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    strong {
+      display: block;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+  }
+
+  a {
+    color: #fafafa;
+    display: block;
+    line-height: 26px;
+    text-decoration: none;
+
+    &.download {
+      background-color: #604687;
+      border-radius: 20px;
+      display: inline-block;
+      padding: 0 20px;
+    }
+  }
+}
+
+.right-content {
+  float: right;
+  font-size: 1rem;
+  text-align: center;
+  width: 40%;
+
+  strong {
+    display: block;
+    margin-bottom: -6px;
+    text-transform: uppercase;
+  }
+
+  .social-links {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 40px;
+      margin-right: 5px;
+      width: 40px;
+    }
+  }
+}
+
+.twitter-icon svg {
+  fill: #ffffff;
+  width: 40px;
+  height: 40px;
+}
+
+.right-content .social-links a:last-child {
+  margin: 0;
+}
+
+.developed {
+  border-top: 1px solid #2C2C2C;
+  margin-top: 30px;
+  padding-top: 10px;
+
+  .logo {
+    display: inline-block;
+    line-height: 0;
+    margin-left: 10px;
+    position: relative;
+    top: 8px;
+    width: 80px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+
+.github-icon {
+  background: none !important;
+}
+
+.discord-icon {
+  background: none !important;
+  padding-top: 4px;
+}
+
+.github-icon svg {
+  fill: #fff;
+  width: 35px;
+  height: 35px;
+}

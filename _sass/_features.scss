@@ -1,0 +1,39 @@
+/*=============================================================================================================================================
+==================================================================  FEACTURES =================================================================
+=============================================================================================================================================*/
+
+#rotated_box {
+  background-color: #fafafa;
+  box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  margin: 0 0 100px -25px;
+  padding: 130px 40px;
+  position: relative;
+  transform: rotate(-4deg);
+  -moz-transform: rotate(-4deg);
+  -webkit-transform: rotate(-4deg);
+  width: 100%;
+  z-index: 256;
+
+  .content {
+    padding-right: 38px;
+    transform: rotate(4deg);
+    -moz-transform: rotate(4deg);
+    -webkit-transform: rotate(4deg);
+
+    .column {
+      float: left;
+      margin-right: 6%;
+      text-align: center;
+      width: 29%;
+
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+
+      h3 {
+        text-transform: uppercase;
+      }
+    }
+  }
+}

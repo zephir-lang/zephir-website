@@ -1,0 +1,21 @@
+
+
+.landing--error {
+  margin-bottom: 0;
+
+  p, a, h1 {
+    color: #ffffff;
+  }
+
+  #calltoaction {
+    padding: 0;
+  }
+
+  .content {
+    &.navbar {
+      min-width: 320px;
+    }
+
+    min-width: auto;
+  }
+}
