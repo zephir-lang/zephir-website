@@ -9,7 +9,7 @@
   "compilationModelDescription": "Zephir toma ventaja del ecosistema de extensiones disponible en PHP para permitirte crear tus propias extensiones como librerías compartidas en Linux/OSX y DLLs en Windows.",
   "contactUs": "Contáctanos",
   "description": "Zephir es un lenguaje de código abierto, alto nivel/dominio específico, diseñado para facilitar la creación y mantenimiento de extensiones para PHP con un enfoque de tipo y cuidado de memoria.",
-  "discussions": "Discusiones",
+  "discussions": "Discussions",
   "documentation": "Documentación",
   "download": "Descargar",
   "encancePhp": "Mejore su framework o librerias de PHP haciéndolos ",
@@ -48,8 +48,8 @@
   "websiteDesignedBy": "Sitio web diseñado por",
   "whatIsIt": "¿Qué es?",
   "zephir": "Zephir",
-  "404PageTitle": "Página no encontrada.",
-  "404PageParagraphFirst": "Lo sentimos, la página que estás buscando no existe.",
-  "404PageParagraphSecond": "Tal vez has escrito la URL incorrectamente, o puede que se haya movido.",
-  "404PageParagraphLink": "Volver al Inicio"
+  "404PageTitle": "Page not found.",
+  "404PageParagraphFirst": "Sorry – the page you're looking for doesn't exist.",
+  "404PageParagraphSecond": "Perhaps you typed the URL incorrectly, or it may have moved.",
+  "404PageParagraphLink": "Back To Home"
 }
