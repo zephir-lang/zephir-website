@@ -39,7 +39,7 @@ permalink: /es-ES
                         </a>
                     </li>
                     <li>
-                        <select class="languageSelector"
+                        <select class="languageSelector" aria-label="language selector"
                                 onchange="javascript:location.href = this.value;">
                             {% for language in site.app.languages %}
                             <option value="{{ site.url }}/{{ language }}"{% if language == page.language %} selected="selected"{% endif %}>
