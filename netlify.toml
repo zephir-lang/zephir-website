@@ -1,3 +1,0 @@
-[build]
-    command = "jekyll build --incremental"
-    publish = "_site/"
