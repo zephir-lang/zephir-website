@@ -9,7 +9,6 @@
   "compilationModelDescription": "Zephir toma ventaja del ecosistema de extensiones disponible en PHP para permitirte crear tus propias extensiones como librerías compartidas en Linux/OSX y DLLs en Windows.",
   "contactUs": "Contáctanos",
   "description": "Zephir es un lenguaje de código abierto, alto nivel/dominio específico, diseñado para facilitar la creación y mantenimiento de extensiones para PHP con un enfoque de tipo y cuidado de memoria.",
-  "discussions": "Discusiones",
   "documentation": "Documentación",
   "download": "Descargar",
   "encancePhp": "Mejore su framework o librerias de PHP haciéndolos ",
