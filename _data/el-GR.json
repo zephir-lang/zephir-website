@@ -4,7 +4,7 @@
   "arrays": "Πίνακες",
   "author": "Η ομάδα της Zephir γλώσσας",
   "basicSyntax": "Βασική σύνταξη",
-  "blog": "Ιστολόγιο",
+  "discussions": "Discussions",
   "compilationModel": "Μοντελο μεταγλωττισης",
   "compilationModelDescription": "Η Zephir εκμεταλλεύεται το υπάρχον σύστημα επεκτάσεων στην PHP και βοηθάει στη δημιουργία των δικών σας επεκτάσεων ως κοινόχρηστες βιβλιοθήκες σε Linux/OSX και DLLs στα Windows.",
   "contactUs": "Επικοινωνία",
