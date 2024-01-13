@@ -4,7 +4,7 @@
   "arrays": "Arrays",
   "author": "Equipo del Lenguaje Zephir",
   "basicSyntax": "Sintaxis básica",
-  "blog": "Blog",
+  "discussions": "Discussions",
   "compilationModel": "Modelo de compilación",
   "compilationModelDescription": "Zephir toma ventaja del ecosistema de extensiones disponible en PHP para permitirte crear tus propias extensiones como librerías compartidas en Linux/OSX y DLLs en Windows.",
   "contactUs": "Contáctanos",
