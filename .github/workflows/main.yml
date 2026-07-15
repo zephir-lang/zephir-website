@@ -1,0 +1,85 @@
+name: Sync zephir version
+
+on:
+  schedule:
+    - cron: '17 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync-version:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout zephir-website
+        uses: actions/checkout@v4
+
+      - name: Fetch latest zephir release tag
+        id: release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TAG=$(curl -fsSL \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            https://api.github.com/repos/zephir-lang/zephir/releases/latest \
+            | jq -r '.tag_name')
+
+          if [ -z "$TAG" ] || [ "$TAG" = "null" ]; then
+            echo "::error::Could not resolve zephir-lang/zephir's latest release tag"
+            exit 1
+          fi
+
+          # Defensive: strip a leading 'v' in case the tagging scheme ever changes
+          TAG="${TAG#v}"
+
+          echo "tag=$TAG" >> "$GITHUB_OUTPUT"
+
+      - name: Update version in _config.yml
+        run: |
+          python3 - "${{ steps.release.outputs.tag }}" <<'PYEOF'
+          import re
+          import sys
+
+          tag = sys.argv[1]
+          path = "_config.yml"
+
+          with open(path) as f:
+              content = f.read()
+
+          pattern = re.compile(r"^(\s*version:\s*')([^']+)(')", re.MULTILINE)
+          match = pattern.search(content)
+          if not match:
+              sys.exit("Could not find a 'version:' entry in _config.yml")
+
+          current = match.group(2)
+          if current == tag:
+              print(f"Already up to date at {tag}")
+              sys.exit(0)
+
+          new_content = pattern.sub(rf"\g<1>{tag}\g<3>", content, count=1)
+          with open(path, "w") as f:
+              f.write(new_content)
+          print(f"Bumped version: {current} -> {tag}")
+          PYEOF
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          if git diff --quiet -- _config.yml; then
+            echo "No changes to commit"
+            exit 0
+          fi
+
+          git add _config.yml
+          git commit -m "chore: bump zephir version to ${{ steps.release.outputs.tag }}"
+
+          for i in 1 2 3; do
+            git pull --rebase origin "$GITHUB_REF_NAME" && \
+              git push origin "HEAD:$GITHUB_REF_NAME" && break
+            echo "Push attempt $i failed, retrying in 5s..."
+            sleep 5
+          done
